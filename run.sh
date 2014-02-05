@@ -7,5 +7,5 @@ mkdir -p log
 source /etc/profile.d/rbenv.sh
 export RBENV_VERSION=mri
 
-bundle install --deployment
+bundle install --path /bundled_gems
 bundle exec unicorn -c unicorn.rb -E development
