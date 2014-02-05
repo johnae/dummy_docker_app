@@ -1,5 +1,8 @@
 #!/bin/bash
 
+rm -rf tmp
+rm -rf log
+
 mkdir -p tmp/sockets
 mkdir -p tmp/pids
 mkdir -p log
