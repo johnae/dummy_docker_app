@@ -6,6 +6,6 @@ HOSTNAME=`hostname`
 
 class MyApp < Sinatra::Base
   get '/' do
-    "Version #{VERSION}, revision: #{GIT_REV}, hostname: #{HOSTNAME} - hello!"
+    "Version #{VERSION}, revision: #{GIT_REV}, hostname: #{HOSTNAME}"
   end
 end
