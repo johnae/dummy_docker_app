@@ -2,9 +2,10 @@ require "sinatra/base"
 
 VERSION="0.0.1"
 GIT_REV=`git rev-parse --short HEAD`
+HOSTNAME=`hostname`
 
 class MyApp < Sinatra::Base
   get '/' do
-    "Version #{VERSION}, #{GIT_REV}"
+    "Version #{VERSION}, revision: #{GIT_REV}, hostname: #{HOSTNAME}"
   end
 end
